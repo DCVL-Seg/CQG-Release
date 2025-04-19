@@ -4,8 +4,9 @@ This repository is an official Pytorch implementation of the paper [**"Clusterin
 Yeong Woo Kim and Wonjun Kim <br>
 ***IEEE Signal Processing Letters***, 2025. </br>
 <p align="center">
-  <img src="[https://github.com/DCVL-WSSS/ClusterCAM/assets/49578893/82ccf953-05b2-4b3e-9441-90b3a247a493](https://github.com/user-attachments/assets/69c8db18-2be0-4595-9a1c-a9cdf80da375)" alt="The overall architecture of the proposed method."/>
+  <img src="https://github.com/user-attachments/assets/c873d121-c254-4048-b634-4e30d672a251" alt="The overall architecture of the proposed method."/>
 </p>
+
 *The overall architecture of the proposed method.*
 
 ## Installation
