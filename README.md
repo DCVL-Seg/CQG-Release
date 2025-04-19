@@ -13,77 +13,30 @@ Yeong Woo Kim and Wonjun Kim <br>
 Since this code is based on [Mask2Former](https://github.com/facebookresearch/Mask2Former), please follow the [Installation Guide](https://github.com/facebookresearch/Mask2Former/blob/main/INSTALL.md) of Mask2Former.
 
 ## Dataset Preparation
-- Download PASCAL VOC2012 dataset: http://host.robots.ox.ac.uk/pascal/VOC/voc2012 (augmented annotations from [SBD dataset](http://home.bharathh.info/pubs/codes/SBD/download.html), [DropBox](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0))
-- Download MS COCO dataset:
-  ```bash
-  wget http://images.cocodataset.org/zips/train2014.zip
-  wget http://images.cocodataset.org/zips/val2014.zip
-  ```
-
-- The resulting data structure should follow the hierarchy as below.
-
-   ```
-   ${REPO_DIR}  
-   |-- voc12  
-   |   |-- VOC2012
-   |       |-- JPEGImages
-   |       |-- Annotations
-   |       |-- ImageSets
-   |       |-- SegmentationClass
-   |       |-- SegmentationClassAug
-   |       |-- ...
-   |-- coco   
-   |   |-- COCO14
-   |       |-- anno
-   |       |-- annotations
-   |       |-- SegmentationClass
-   |       |-- train2014
-   |       |-- val2014
-   |       |-- ...
-   |-- run_e2e.sh 
-   |-- infer_e2e.sh 
-   |-- ...
-   ```
+Since this code is based on [Mask2Former](https://github.com/facebookresearch/Mask2Former), please follow the [Dataset Preparation Guide](https://github.com/facebookresearch/Mask2Former/tree/main/datasets) of Mask2Former.
 
 ## How to use it
 ### Train
 ```bash
-sh run_e2e.sh       # for the PASCAL VOC 2012 experiment
-sh run_e2e_coco.sh  # for the MS COCO 2014 experiment
+sh train_ade.sh       # for the ADE20K experiment
+sh train_city.sh  # for the Cityscapes experiment
 ```
-### Inference
-```bash
-sh infer_e2e.sh      # for the PASCAL VOC 2012 experiment
-sh infer_e2e_coco.sh # for the MS COCO 2014 experiment
-```
+
 ## Results
 ### Quantitative results
-| Model                        | Dataset   | Valid | Test | Checkpoint            |
-| ---------------------------- | --------- | ----- | -------- | --------------- |
-| ClsuterCAM                | PASCAL VOC 2012 |70.3   | 70.7     | [Download](https://drive.google.com/file/d/1GqLasPff6hk_X9wJPr-wWmq4XwdhsWB9/view?usp=sharing)|
-| ClsuterCAM                | MS COCO 2014      | 41.8   | -     | [Download](https://drive.google.com/file/d/1Gu01U0g6_usorubqydM3guX6XfOCtvRT/view?usp=sharing)|
+
 ### Qualitative results
-![sem_seg_voc](https://github.com/DCVL-WSSS/ClusterCAM/assets/49578893/f71fd63d-55e4-48ef-9061-1d696cbc07c4)
-*Results of semantic segmentation on the PASCAL VOC 2012 dataset [24]. From top to bottom: input images, ground truths, results by AFA, ToCo, and ClusterCAM (ours).*
-![ablation_clusterCAM](https://github.com/DCVL-WSSS/ClusterCAM/assets/49578893/0105bd8f-81e2-4e80-865d-a5d1c205ea1f)
-*Visualization examples of attention weights and ClusterCAMs. From top to bottom: input images, ground truths, patch-to-class attention weights, cluster-to-class attention weights, and ClusterCAMs.*
+
 
 ## Acknowledgments
-This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korean Government [Ministry of Science and ICT (MSIT)] under Grant 2023R1A2C1003699.
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korean Government [Ministry of Science and ICT (MSIT)] under Grant RS-2023-NR076462.
 
 Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
 
-[xulianuwa/MCTformer](https://github.com/xulianuwa/MCTformer)  </br>
-[rulixiang/afa](https://github.com/rulixiang/afa)  </br>
+[Mask2Former]([https://github.com/facebookresearch/Mask2Former](https://github.com/facebookresearch/Mask2Former))  </br>
 
 ## Citation
 ```bibtex
-@ARTICLE{10381698,
-  author={Kim, Yeong Woo and Kim, Wonjun},
-  journal={IEEE Access}, 
-  title={Clustering-Guided Class Activation for Weakly Supervised Semantic Segmentation}, 
-  year={2024},
-  volume={12},
-  number={},
-  pages={4871-4880},
-  doi={10.1109/ACCESS.2024.3350176}}
+Y. W. Kim and W. Kim, "Clustering-Based Adaptive Query Generation for Semantic Segmentation," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2025.3558160.
+keywords: {Decoding;Vectors;Transformers;Semantic segmentation;Training;Semantics;Floors;Convolution;Shape;Phase frequency detectors;Semantic segmentation;deep learning;learnable queries;clustering-based adaptive query generation},
+```
