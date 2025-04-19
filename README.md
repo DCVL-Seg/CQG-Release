@@ -10,8 +10,7 @@ Yeong Woo Kim and Wonjun Kim <br>
 *The overall architecture of the proposed method.*
 
 ## Installation
-- Requirements
-  - Pytorch >= 1.10
+Since this code is based on [Mask2Former](https://github.com/facebookresearch/Mask2Former), please follow the [Installation Guide](https://github.com/facebookresearch/Mask2Former/blob/main/INSTALL.md) of Mask2Former.
 
 ```bash
 # We suggest to create a new conda environment with python version 3.9
