@@ -12,19 +12,6 @@ Yeong Woo Kim and Wonjun Kim <br>
 ## Installation
 Since this code is based on [Mask2Former](https://github.com/facebookresearch/Mask2Former), please follow the [Installation Guide](https://github.com/facebookresearch/Mask2Former/blob/main/INSTALL.md) of Mask2Former.
 
-```bash
-# We suggest to create a new conda environment with python version 3.9
-conda create -n ClusterCAM python=3.9 -y
-conda activate ClusterCAM
-
-# Install Pytorch that is compatible with your CUDA version
-conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit=11.3 -c pytorch -c conda-forge
-
-# Install requirements
-pip install -r requirements.txt
-conda install -c  conda-forge pydensecrf
-```
-
 ## Dataset Preparation
 - Download PASCAL VOC2012 dataset: http://host.robots.ox.ac.uk/pascal/VOC/voc2012 (augmented annotations from [SBD dataset](http://home.bharathh.info/pubs/codes/SBD/download.html), [DropBox](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0))
 - Download MS COCO dataset:
