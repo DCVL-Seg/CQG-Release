@@ -1,6 +1,6 @@
 <h1 align="center">Clustering-based Adaptive Query Generation for Semantic Segmentation</h1>
 
-This repository is an official Pytorch implementation of the paper [**"Clustering-guided Class Activation for Weakly Supervised Semantic Segmentation"**](https://ieeexplore.ieee.org/abstract/document/10381698) <br>
+This repository is an official Pytorch implementation of the paper [**"Clustering-Based Adaptive Query Generation for Semantic Segmentation"**](https://ieeexplore.ieee.org/abstract/document/10949765) <br>
 Yeong Woo Kim and Wonjun Kim <br>
 ***IEEE Access***, Jan. 2024. </br>
 <p align="center">
