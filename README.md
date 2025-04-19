@@ -2,11 +2,10 @@
 
 This repository is an official Pytorch implementation of the paper [**"Clustering-Based Adaptive Query Generation for Semantic Segmentation"**](https://ieeexplore.ieee.org/abstract/document/10949765) <br>
 Yeong Woo Kim and Wonjun Kim <br>
-***IEEE Access***, Jan. 2024. </br>
+***IEEE Signal Processing Letters***, 2025. </br>
 <p align="center">
-  <img src="https://github.com/DCVL-WSSS/ClusterCAM/assets/49578893/82ccf953-05b2-4b3e-9441-90b3a247a493" alt="The overall architecture of the proposed method."/>
+  <img src="[https://github.com/DCVL-WSSS/ClusterCAM/assets/49578893/82ccf953-05b2-4b3e-9441-90b3a247a493](https://github.com/user-attachments/assets/69c8db18-2be0-4595-9a1c-a9cdf80da375)" alt="The overall architecture of the proposed method."/>
 </p>
-
 *The overall architecture of the proposed method.*
 
 ## Installation
@@ -19,7 +18,7 @@ Since this code is based on [Mask2Former](https://github.com/facebookresearch/Ma
 ### Train
 ```bash
 sh train_ade.sh       # for the ADE20K experiment
-sh train_city.sh  # for the Cityscapes experiment
+sh train_city.sh      # for the Cityscapes experiment
 ```
 
 ## Results
@@ -33,7 +32,7 @@ This work was supported by the National Research Foundation of Korea (NRF) grant
 
 Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
 
-[Mask2Former]([https://github.com/facebookresearch/Mask2Former](https://github.com/facebookresearch/Mask2Former))  </br>
+[Mask2Former] [https://github.com/facebookresearch/Mask2Former](https://github.com/facebookresearch/Mask2Former)  </br>
 
 ## Citation
 ```bibtex
