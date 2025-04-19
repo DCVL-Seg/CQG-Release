@@ -37,6 +37,13 @@ Our implementation and experiments are built on top of open-source GitHub reposi
 
 ## Citation
 ```bibtex
-Y. W. Kim and W. Kim, "Clustering-Based Adaptive Query Generation for Semantic Segmentation," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2025.3558160.
-keywords: {Decoding;Vectors;Transformers;Semantic segmentation;Training;Semantics;Floors;Convolution;Shape;Phase frequency detectors;Semantic segmentation;deep learning;learnable queries;clustering-based adaptive query generation},
+@ARTICLE{10949765,
+  author={Kim, Yeong Woo and Kim, Wonjun},
+  journal={IEEE Signal Processing Letters}, 
+  title={Clustering-Based Adaptive Query Generation for Semantic Segmentation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/LSP.2025.3558160}}
 ```
