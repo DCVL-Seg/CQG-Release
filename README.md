@@ -25,9 +25,17 @@ sh train_city.sh      # for the Cityscapes experiment
 ## Results
 ### Quantitative results
 
+| Model | Dataset    | Backbone | mIoU |
+| ---   | ---        | ---      | ---  |
+| CQG   | ADE20K     | R50      | 48.7 |
+| CQG   | ADE20K     | Swin-B   | 55.4 |
+| CQG   | ADE20K     | Swin-L   | 56.4 |
+| CQG   | Cistyscaes | R50      | 80.8 |
+
+
 ### Qualitative results
-
-
+![ade](https://github.com/user-attachments/assets/438f04ef-d222-47d5-b9fb-909860104ecb)
+![city](https://github.com/user-attachments/assets/79fc35db-3d1a-4b1a-855b-c2c8fff517ad)
 ## Acknowledgments
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korean Government [Ministry of Science and ICT (MSIT)] under Grant RS-2023-NR076462.
 
@@ -42,8 +50,8 @@ Our implementation and experiments are built on top of open-source GitHub reposi
   journal={IEEE Signal Processing Letters}, 
   title={Clustering-Based Adaptive Query Generation for Semantic Segmentation}, 
   year={2025},
-  volume={},
+  volume={32},
   number={},
-  pages={1-5},
+  pages={1580-1584},
   doi={10.1109/LSP.2025.3558160}}
 ```
